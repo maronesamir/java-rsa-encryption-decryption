@@ -25,7 +25,6 @@ public class RSACryptographyTest {
         byte[] decryptedMessage = RSACryptography.decrypt(keyPair.getPrivate(), encryptedMessage);
         System.out.println("decryptedMessage: " + new String(decryptedMessage));
 
-
         assertTrue(orginalMessage.equals(new String(decryptedMessage)));
     }
 
